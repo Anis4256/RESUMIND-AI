@@ -1,0 +1,81 @@
+===========================================
+AUTO JOB APPLIER - ENVIRONMENT SETUP
+===========================================
+
+STEP 1: GET ADZUNA API CREDENTIALS
+-------------------------------------------
+1. Visit: https://developer.adzuna.com/
+2. Click "Sign Up" (it's FREE!)
+3. After signing in, go to "My Apps"
+4. Click "Create New App"
+5. Fill in basic details (app name, description)
+6. You'll receive:
+   - App ID (e.g., 12345678)
+   - API Key (e.g., abcdef123456789...)
+
+STEP 2: CREATE .ENV FILE
+-------------------------------------------
+1. In the project root directory, create a new file named: .env
+2. Add these lines to the .env file:
+
+VITE_ADZUNA_APP_ID=paste_your_app_id_here
+VITE_ADZUNA_API_KEY=paste_your_api_key_here
+
+3. Replace "paste_your_app_id_here" with your actual App ID
+4. Replace "paste_your_api_key_here" with your actual API Key
+
+EXAMPLE .ENV FILE:
+-------------------------------------------
+VITE_ADZUNA_APP_ID=12345678
+VITE_ADZUNA_API_KEY=abcdef123456789abcdef123456789ab
+
+STEP 3: VERIFY SETUP
+-------------------------------------------
+1. Make sure the .env file is in the same folder as package.json
+2. DO NOT commit the .env file to Git (it's in .gitignore)
+3. Restart your development server if it's running
+
+STEP 4: TEST THE FEATURE
+-------------------------------------------
+1. Run: npm run dev
+2. Open the app in your browser
+3. Sign in and upload a resume
+4. Click "🤖 Auto Job Applier" in the navigation
+5. Try searching for jobs!
+
+===========================================
+TROUBLESHOOTING
+===========================================
+
+Problem: "Adzuna API error"
+Solution: Check that your API credentials are correct
+
+Problem: Feature not loading
+Solution: Make sure .env file is in the correct location
+
+Problem: No jobs found
+Solution: Try broader search terms or different locations
+
+===========================================
+SECURITY NOTES
+===========================================
+
+✓ Never share your API credentials
+✓ Never commit .env file to version control
+✓ Keep your .env file secure
+✓ The .env file is already in .gitignore
+
+===========================================
+NEED HELP?
+===========================================
+
+Check the documentation:
+- QUICK_START.md (Quick 5-minute guide)
+- AUTO_JOB_APPLIER_SETUP.md (Complete documentation)
+- FEATURE_SUMMARY.md (Feature overview)
+
+Adzuna API Support:
+https://developer.adzuna.com/docs
+
+===========================================
+
